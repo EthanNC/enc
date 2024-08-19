@@ -1,5 +1,4 @@
 import ssg from "@hono/vite-ssg";
-import pages from "@hono/vite-cloudflare-pages";
 import mdx from "@mdx-js/rollup";
 import honox from "honox/vite";
 import client from "honox/vite/client";
@@ -33,7 +32,6 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [
       honox(),
-      pages(),
       mdx({
         jsxImportSource: "hono/jsx",
         remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],

@@ -29,7 +29,6 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
     "@cloudflare/workers-types": "^4.20240815.0",
-    "@hono/vite-cloudflare-pages": "^0.4.0",
     "@hono/vite-ssg": "^0.1.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.35",
