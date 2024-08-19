@@ -7,7 +7,7 @@ const MIN_EMOJI_LENGTH = 1;
 const MIN_DESCRIPTION_LENGTH = 1; // 最低限の説明文の長さを設定
 const POSTS_DIR = "./app/routes/posts";
 const __dirname = resolve();
-const templatePath = join(__dirname, "./app/libs/posts/template.mdx");
+const templatePath = join(__dirname, "./app/lib/posts/template.mdx");
 
 const rl = createInterface({
   input: process.stdin,
@@ -84,7 +84,7 @@ function generatePost() {
           throw err;
         }
         console.log(
-          `🎉 Successfully created ${filename} with title, description, and date! 🎉`,
+          `🎉 Successfully created ${filename} with title, description, and date! 🎉`
         );
         rl.close();
       });

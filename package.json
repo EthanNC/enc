@@ -12,15 +12,19 @@
     "check": "biome check --apply .",
     "check:ci": "biome ci .",
     "typecheck": "tsc -p . --noEmit",
-    "create:post": "node ./app/libs/posts/generate-post.mjs"
+    "create:post": "node ./app/lib/posts/generate-post.mjs"
   },
   "dependencies": {
     "@mdx-js/rollup": "^3.0.1",
+    "clsx": "^2.1.1",
     "highlight.js": "^11.10.0",
     "hono": "^4.5.6",
     "honox": "^0.1.24",
+    "lucide-react": "^0.428.0",
     "remark-frontmatter": "^5.0.0",
-    "remark-mdx-frontmatter": "^4.0.0"
+    "remark-mdx-frontmatter": "^4.0.0",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.3",

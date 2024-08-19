@@ -5,8 +5,9 @@ import type { PropsWithChildren } from "hono/jsx";
 
 export default jsxRenderer(
   ({ children, title, description }: PropsWithChildren<Head>) => {
-    const _title = title ?? "Blog Name";
-    const _description = description ?? "This is a my blog";
+    const _title = title ?? "ENC Portfolio";
+    const _description =
+      description ?? "My personal website containing blog posts and projects.";
     const _image = "/static/profile-image.png";
 
     return (
@@ -45,10 +46,10 @@ export default jsxRenderer(
           />
         </head>
         <body class="main-container">
-          <header class="bg-blue-500">
-            <div class="max-w-screen-2xl mx-auto flex h-16 items-center justify-between px-6">
-              <a href="/" class="text-white text-base font-bold">
-                My Blog
+          <header class="bg-main">
+            <div class="max-w-screen-2xl border-bord mx-auto flex h-16 items-center justify-between px-6">
+              <a href="/" class="text-white text-3xl font-bold">
+                ENC
               </a>
               <div class="flex items-center gap-2">
                 <a
@@ -82,7 +83,7 @@ export default jsxRenderer(
             {children}
           </main>
           <footer class="mt-10 text-center py-4 border-t border-black">
-            <p>&copy; 2024 my blog. All rights reserved.</p>
+            <p>&copy; 2024 ENC. All rights reserved.</p>
           </footer>
         </body>
       </html>

@@ -3,11 +3,19 @@ import type { FC } from "hono/jsx";
 export default function Top() {
   return (
     <>
-      <div class="border-b border-blue-200 mt-10">
-        <h1 class="text-2xl font-semibold pb-1">Honox Blog Templete</h1>
-      </div>
-      <div class="mt-5">
-        <p class="font-medium">Honox Blog Templete</p>
+      <div className="font-base mt-11">
+        <h1 className="text-2xl font-heading sm:text-4xl">Ethan Cumming</h1>
+        <p className="mt-2 text-lg sm:text-xl">Software Engineer</p>
+        <div className="mt-8 text-base sm:text-lg">
+          <p>I am a software engineer based out of Boston.</p>
+
+          <br />
+          <p>
+            I am also an avid technologist who likes to explore the newest
+            breakthroughs in hardware and software. Here you will find my recent
+            writings, projects, and talks related to web development.
+          </p>
+        </div>
       </div>
       <Posts />
     </>
