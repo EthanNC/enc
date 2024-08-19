@@ -1,5 +1,5 @@
-import pages from "@hono/vite-cloudflare-pages";
 import ssg from "@hono/vite-ssg";
+import pages from "@hono/vite-cloudflare-pages";
 import mdx from "@mdx-js/rollup";
 import honox from "honox/vite";
 import client from "honox/vite/client";
@@ -25,6 +25,9 @@ export default defineConfig(({ mode }) => {
     };
   }
   return {
+    server: {
+      open: true,
+    },
     build: {
       emptyOutDir: false,
     },
