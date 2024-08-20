@@ -14,6 +14,7 @@ export default $config({
         command: "pnpm run build",
         output: "dist",
       },
+      domain: "ethannc.dev",
     });
   },
 });
