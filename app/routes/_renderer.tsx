@@ -53,15 +53,15 @@ export default jsxRenderer(
               </a>
               <div class="flex items-center gap-2">
                 <a
-                  href={LINK.X}
+                  href={LINK.LINKEDIN}
                   target={"_blank"}
                   rel={"noreferrer"}
                   class="p-2"
                 >
                   <img
-                    src="/static/twitter-alt.svg"
-                    alt="x-icon"
-                    class="w-7 h-7"
+                    src="/static/linkedin.svg"
+                    alt="linkedin-icon"
+                    class="w-7 h-7 stroke-white"
                   />
                 </a>
                 <a
