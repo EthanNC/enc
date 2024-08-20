@@ -1,4 +1,5 @@
 import type { FC } from "hono/jsx";
+import { formatDate } from "../lib/utils";
 
 export default function Top() {
   return (
@@ -34,11 +35,16 @@ const Posts: FC = () => {
     <div class="mt-16">
       <ul class="mt-10">
         {entries.map(([id, module]) => (
-          <li key={id} class="text-lg mt-2 md:mt-1">
-            <span class="tabular-nums tnum">{module.frontmatter.date}: </span>
-            <br class="block md:hidden" />
+          <li
+            key={id}
+            class="w-full flex flex-col sm:flex-row space-x-0 sm:space-x-2 mt-2 md:mt-1"
+          >
+            <span class="tabular-nums tnum">
+              {formatDate(module.frontmatter.date)}
+            </span>
+            {/* <br class="block md:hidden" /> */}
             <a
-              class="text-blue-600 underline"
+              class="text-blue-600 hover:underline"
               href={`${id.replace(/\.mdx$/, "")}`}
             >
               {module.frontmatter.title}
