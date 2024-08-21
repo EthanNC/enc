@@ -46,9 +46,9 @@ export default jsxRenderer(
           />
         </head>
         <body class="main-container">
-          <header class="bg-main">
-            <div class="max-w-screen-2xl border-bord mx-auto flex h-16 items-center justify-between px-6">
-              <a href="/" class="text-white text-3xl font-bold">
+          <header class="m-2">
+            <div class="text-text border-border dark:border-darkBorder shadow-light dark:shadow-dark mx-auto flex items-center w-max gap-5 rounded-base border-2 bg-main p-2.5 px-5 text-sm font-base sm:text-base w450:gap-4">
+              <a href="/" class=" text-white  text-3xl font-bold">
                 ENC
               </a>
               <div class="flex items-center gap-2">
@@ -61,7 +61,7 @@ export default jsxRenderer(
                   <img
                     src="/static/linkedin.svg"
                     alt="linkedin-icon"
-                    class="w-7 h-7 stroke-white"
+                    class="w-7 h-7 "
                   />
                 </a>
                 <a
@@ -73,7 +73,7 @@ export default jsxRenderer(
                   <img
                     src="/static/github.svg"
                     alt="github-icon"
-                    class="w-7 h-7 text-white"
+                    class="w-7 h-7 text-black"
                   />
                 </a>
               </div>
