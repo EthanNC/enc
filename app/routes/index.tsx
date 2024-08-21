@@ -20,7 +20,7 @@ export default function Top() {
         </div>
       </div>
       <Posts />
-      <Work />
+      {/* <Work /> */}
     </>
   );
 }
