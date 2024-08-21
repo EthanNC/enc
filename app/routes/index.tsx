@@ -1,5 +1,6 @@
 import type { FC } from "hono/jsx";
 import { formatDate } from "../lib/utils";
+import Work from "../islands/Work";
 
 export default function Top() {
   return (
@@ -19,6 +20,7 @@ export default function Top() {
         </div>
       </div>
       <Posts />
+      <Work />
     </>
   );
 }
@@ -33,6 +35,7 @@ const Posts: FC = () => {
 
   return (
     <div class="mt-16">
+      <h1 className="mb-8 text-2xl font-heading sm:text-4xl">Posts</h1>
       <ul class="mt-10">
         {entries.map(([id, module]) => (
           <li
