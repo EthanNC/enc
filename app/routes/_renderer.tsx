@@ -46,8 +46,8 @@ export default jsxRenderer(
           />
         </head>
         <body class="main-container">
-          <header class="bg-main">
-            <div class="max-w-screen-2xl border-bord mx-auto flex h-16 items-center justify-between px-6">
+          <header class="p-2">
+            <div class=" max-w-screen-2xl bg-main border-border border-2 shadow-light rounded-sm  mx-auto flex h-16 items-center justify-between px-6">
               <a href="/" class="text-white text-3xl font-bold">
                 ENC
               </a>

@@ -20,7 +20,7 @@ export default function Top() {
         </div>
       </div>
       <Posts />
-      {/* <Work /> */}
+      <Work />
     </>
   );
 }
@@ -40,7 +40,7 @@ const Posts: FC = () => {
         {entries.map(([id, module]) => (
           <li
             key={id}
-            class="w-full flex flex-col sm:flex-row space-x-0 sm:space-x-2 mt-2 md:mt-1"
+            class="w-full flex flex-col sm:flex-row sm:gap-2 mt-2 md:mt-1"
           >
             <span class="tabular-nums tnum">
               {formatDate(module.frontmatter.date)}
