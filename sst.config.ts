@@ -9,9 +9,9 @@ export default $config({
     };
   },
   async run() {
-    new sst.cloudflare.StaticSite("Web", {
+    new sst.cloudflare.StaticSiteV2("Web", {
       build: {
-        command: "pnpm run build",
+        command: "bun run build",
         output: "dist",
       },
       domain: "ethannc.dev",
